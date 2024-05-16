@@ -12,17 +12,22 @@
   <link rel="icon" type="image/png" href="favicon.png"/>
   <title>newprac</title>
   <link rel="manifest" href="manifest.json">
-  <script>
-    const serviceWorkerVersion = "2791127501";
-  </script>
+  
+  <!-- Include flutter.js -->
   <script src="flutter.js" defer></script>
-  <script type="text/javascript">
+  
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    const serviceWorkerVersion = "2791127501";
+    
+    // Initialize Flutter Web Renderer
     window.flutterWebRenderer = "html";
   </script> 
 </head>
 <body>
   <script>
     window.addEventListener('load', function(ev) {
+      // Load entrypoint
       _flutter.loader.loadEntrypoint({
         serviceWorker: {
           serviceWorkerVersion: serviceWorkerVersion,
